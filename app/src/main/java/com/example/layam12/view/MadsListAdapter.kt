@@ -28,7 +28,7 @@ class MadsListAdapter(val madsList: ArrayList<Mad>) :
     override fun getItemCount() = madsList.size
 
     override fun onBindViewHolder(holder: MadViewHolder, position: Int) {
-      // holder.view.madName.text = madsList[position].name
+       holder.view.madName.text = madsList[position].name
         holder.view.madItemLayout.setOnClickListener {
             val action = ListFragmentDirections.actionToDetails(madsList[position])
             Navigation.findNavController(it).navigate(action)
