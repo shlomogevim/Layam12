@@ -22,6 +22,7 @@ class DetailsFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_details, container, false)
     }
@@ -32,20 +33,27 @@ class DetailsFragment : Fragment() {
             mad=DetailsFragmentArgs.fromBundle(it).mad
 
         }
-        madName.text= mad?.name
-        webView.settings.javaScriptEnabled=true
-        /*webView.webViewClient= WebViewClient()
-        webView.loadUrl(mad?.adress)*/
 
-        webView.webViewClient=object :WebViewClient(){
+        //activity?.actionBar?.setTitle("Layam12")
+
+         // val actionBar=supportActionBar
+      //  actionBar!!.title="Layam12"
+
+        webView.settings.javaScriptEnabled=true
+        webView.webViewClient= WebViewClient()
+        webView.loadUrl(mad?.adress)
+
+       /* webView.webViewClient=object :WebViewClient(){
             override fun shouldOverrideUrlLoading(view: WebView?,url: String?): Boolean {
                 view?.loadUrl(url)
                 return true
             }
         }
-        webView.loadUrl(mad?.adress)
+        webView.loadUrl(mad?.adress)*/
 
     }
 
 
+
 }
+

@@ -14,11 +14,11 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        navControler=Navigation.findNavController(this,R.id.fragment)
-        NavigationUI.setupActionBarWithNavController(this,navControler)
+       /* navControler=Navigation.findNavController(this,R.id.fragment)
+        NavigationUI.setupActionBarWithNavController(this,navControler)*/
     }
 
-    override fun onSupportNavigateUp(): Boolean {
+    /*override fun onSupportNavigateUp(): Boolean {
         return NavigationUI.navigateUp(navControler,null)
-    }
+    }*/
 }
