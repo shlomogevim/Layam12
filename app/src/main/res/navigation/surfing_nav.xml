@@ -22,5 +22,8 @@
         <action
             android:id="@+id/actionToList"
             app:destination="@id/listFragment" />
+        <argument
+            android:name="mad"
+            app:argType="com.example.layam12.model.Mad" />
     </fragment>
 </navigation>

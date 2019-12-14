@@ -8,13 +8,13 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
 import com.example.layam12.R
+import com.example.layam12.model.Mad
 import kotlinx.android.synthetic.main.fragment_details.*
 
-/**
- * A simple [Fragment] subclass.
- */
+
 class DetailsFragment : Fragment() {
 
+    var mad: Mad?=null
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -25,9 +25,14 @@ class DetailsFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        toListFragmentBtn.setOnClickListener {
-            val action = DetailsFragmentDirections.actionToList()
-            Navigation.findNavController(it).navigate(action)
+        arguments?.let {
+            mad=DetailsFragmentArgs.fromBundle(it).mad
+
         }
+
+        madName.text= mad?.name
+
     }
+
+
 }
