@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".view.MainActivity"
-    android:keepScreenOn="true">
+    >
 
     <fragment
         android:id="@+id/fragment"
@@ -23,3 +23,5 @@
         app:layout_constraintTop_toTopOf="parent"
         app:navGraph="@navigation/surfing_nav" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--android:keepScreenOn="true"-->
