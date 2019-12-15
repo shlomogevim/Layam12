@@ -31,7 +31,7 @@ class MadsListAdapter(val madsList: ArrayList<Mad>) :
     override fun onBindViewHolder(holder: MadViewHolder, position: Int) {
        holder.view.madName.text = madsList[position].name
 
-        var r1=R.drawable.a1
+
 
         holder.view.madImage.setImageResource(getInt(position))
         holder.view.madItemLayout.setOnClickListener {
@@ -41,6 +41,29 @@ class MadsListAdapter(val madsList: ArrayList<Mad>) :
     }
     private fun getInt(num:Int):Int{
       var num1= when (num){
+            0->R.drawable.b2
+            1->R.drawable.b6
+            2->R.drawable.b3
+            3->R.drawable.b4
+            4->R.drawable.b1
+            5->R.drawable.b8
+            6->R.drawable.b9
+            7->R.drawable.b10
+            8->R.drawable.b2
+            9->R.drawable.b6
+            10->R.drawable.b3
+            11->R.drawable.b4
+            12->R.drawable.b8
+           else->R.drawable.b1
+        }
+
+
+
+
+       return num1
+    }
+   /* private fun getInt(num:Int):Int{
+        var num1= when (num){
             0->R.drawable.a1
             1->R.drawable.a2
             2->R.drawable.a3
@@ -54,14 +77,14 @@ class MadsListAdapter(val madsList: ArrayList<Mad>) :
             10->R.drawable.a11
             11->R.drawable.a12
             10->R.drawable.a13
-           else->R.drawable.a1
+            else->R.drawable.a1
         }
 
 
 
 
-       return num1
-    }
+        return num1
+    }*/
 
 
 
