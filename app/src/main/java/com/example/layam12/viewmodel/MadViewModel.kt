@@ -26,6 +26,7 @@ class MadViewModel(application: Application) : AndroidViewModel(application) {
         mas1.add(Mad("ארגמן-עכו","https://www.windguru.cz/station/2050"))
         mas1.add(Mad("כנסיה-בת גלים","https://www.windguru.cz/station/1112"))
         mas1.add(Mad("-חוף דדו-נירוונה","https://www.windguru.cz/station/468"))
+        mas1.add(Mad("-בית ינאי","https://asabro.co.il/%D7%A0%D7%AA%D7%95%D7%A0%D7%99-%D7%9E%D7%96%D7%92-%D7%90%D7%95%D7%95%D7%99%D7%A8/?fbclid=IwAR11KCJ_y7c2jntoCiFkpU5pniM7zHDnhijZBK6N7ePPtRtOiozzVUqPVRQ"))
         mas1.add(Mad("משאבות-כנרת","https://www.windguru.cz/station/973"))
         mas1.add(Mad("כפר נחום-כנרת","https://www.windguru.cz/station/1206"))
         mas1.add(Mad("מגדל-כנרת","https://www.windguru.cz/station/1909"))

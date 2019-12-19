@@ -49,11 +49,11 @@ class MadsListAdapter(val madsList: ArrayList<Mad>) :
             5->R.drawable.b8
             6->R.drawable.b9
             7->R.drawable.b10
-            8->R.drawable.b2
-            9->R.drawable.b6
-            10->R.drawable.b3
-            11->R.drawable.b4
-            12->R.drawable.b8
+            8->R.drawable.b20
+            9->R.drawable.b21
+            10->R.drawable.b22
+            11->R.drawable.b24
+            12->R.drawable.b25
            else->R.drawable.b1
         }
 
@@ -62,29 +62,7 @@ class MadsListAdapter(val madsList: ArrayList<Mad>) :
 
        return num1
     }
-   /* private fun getInt(num:Int):Int{
-        var num1= when (num){
-            0->R.drawable.a1
-            1->R.drawable.a2
-            2->R.drawable.a3
-            3->R.drawable.a4
-            4->R.drawable.a5
-            5->R.drawable.a6
-            6->R.drawable.a7
-            7->R.drawable.a8
-            8->R.drawable.a9
-            9->R.drawable.a10
-            10->R.drawable.a11
-            11->R.drawable.a12
-            10->R.drawable.a13
-            else->R.drawable.a1
-        }
 
-
-
-
-        return num1
-    }*/
 
 
 
